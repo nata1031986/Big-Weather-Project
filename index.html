@@ -30,30 +30,38 @@
         <button type="submit" id="search-button">Search</button>
       </form>
     </div>
+   
     <h1 class="city">Denver, USA</h1>
-    <ul>
-      <li>Fri 06:00</li>
-      <li>Cloudy</li>
-    </ul>
+   <ul id="description">
+    <li>Fri 06:00</li>
+    <li>Cloudy</li>
+</ul>
+
 
     <div class="row">
       <div class="col-6">
         <i
           id="icon"
           class="fa-solid fa-cloud fa-beat float-left"
-          style="color: #7d8187;"
+          style="color: white;"
         ></i>
-        <div class="temp">21°C | 70°F</div>
+       <div class="temp" id="temperature">21°C | 70°F</div>
       </div>
       <div class="col-6">
         <ul>
           <li>Precipitation: 0%</li>
-          <li>Humidity: 60%</li>
-          <li>Wind: 2km/h</li>
+        <li id="humidity">Humidity: 60%</li>
+          <li id="wind">Wind: 2km/h</li>
         </ul>
       </div>
     </div>
   </div>
 </div>
+<button id="share-button">
+    <i class="fas fa-share"></i> Share
+</button>
+<footer class="footer">
+    <p>Coded by Natalia P</p>
+</footer>
 </body>
 </html>
