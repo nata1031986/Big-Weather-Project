@@ -1,30 +1,34 @@
-* {
-margin: 0;
-padding:0;
-font-family: 'Open Sans', sans-serif;
 
-box-sizing: border-box;
-
-}
 body {
-    display:flex;
+    display: flex;
     justify-content: center;
+    height: 100vh; 
     align-items: center;
-    height:100vh;
     margin:0;
-    background:white;
 }
+
+
 .card {
    
     padding:2em;
     width:100%;
     max-width:700px;
-    margin:3cm auto;
-     height:600px;
-    border: 2px ridge #ccc; 
+    margin:1em;
+     height:500px;
     
     
-    border-radius: 10px;
+    
+    border-radius: 15px;
+
+
+
+
+
+
+
+
+
+
     
 }
 form {
@@ -33,12 +37,16 @@ form {
     display: flex;
     margin:0;
     border-color: #7D7C7C;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+
   
    
 }
 form input{
     flex: 1;
-    border: none;
+    border: black;
     outline: none;
     font-weight: bold;
    font-family: 'Open Sans', sans-serif;
@@ -64,7 +72,7 @@ form button {
 form .fa-search{
     align-self: center;
     padding: 10px 20px;
-    color:rgb(19, 55, 115);
+    color:black;
 }
 form button,
 form button .fa-search {
@@ -82,21 +90,22 @@ form button:focus {
 }
 
 h1 {
-    color:#878787;
+    color:white;
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 10px;
-    
-}
+    margin-left: 62px;
+    }
 ul{
     margin:0;
     padding: 0;
+    color:#fff;
 }
 li{
     list-style-type: none;
     margin:0;
     padding:none;
-    color:#757575;
+    color:white;
     font-size: 16px;
     font-weight: 100;
     line-height: 19px;
@@ -106,14 +115,12 @@ li{
 
 #icon {
     font-size: 40px;
+    margin-left: 60px;
+    margin-top: 10px;;
+
 }
 
-.wrapper {
-    
-    width: 80%;
-    margin: 0 auto;
-    
-}
+
 
 .footer {
     
@@ -132,10 +139,65 @@ li{
 .col-6 {
     border: none;
     padding: 10px;
-    margin-top: 150px;
+    margin-top: 100px;
+    font-weight: bold;
+   
+}
+.col-6 > * {
+    /* You can use margin-left or padding-left to move the items to the left */
+    margin-left: 60px; /* Adjust the value as needed */
 }
 
 .temp {
-    margin-left: 70px; 
-    color:#757575
+   
+    color:white;
+}
+
+.city {
+    font-size: 24px;
+    color: white;
+ 
+   margin-top:20px;
+}
+
+.container {
+    width: 100%; /* Adjust as needed */
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto; /* Horizontally center the container */
+    text-align: center; /* Optional, centers the form's content horizontally within the container */
+}
+
+.container {
+    margin: 0 auto;
+    padding: 40px; /* Adjust as needed */
+}
+
+.button-clicked {
+    background-color: black;
+    color: white;
+}
+
+ul {
+    margin-left: 60px;
+    font-weight: bold;
+}
+
+#share-button {
+    background-color:#A9A9A9; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Change button background color on hover */
+#share-button:hover {
+    background-color: black; /* Hover background color */
+}
+
+#wrapper-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
 }
