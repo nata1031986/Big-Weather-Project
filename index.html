@@ -3,65 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
-   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/style.css">
-
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
     <script src="https://kit.fontawesome.com/823caa4f71.js" crossorigin="anonymous"></script>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>CoolApp</title>
 </head>
+<body>
+      <div id="wrapper-bg" class="card bg-image shadow-1-strong" style="background-image: url('src/weather-animations/background.gif');">
+        <div class="container">
+            <form id="cityForm">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search for city..." id="cityInput" />
+                <button type="submit">Search</button>
+            </form>
+        </div>
 
-  <div
-    id="wrapper-bg"
-    class="card bg-image shadow-1-strong"
-    style="background-image: url('src/weather-animations/thunderstorm.gif');"
-  >
-   
-    <div class="container">
-      <form>
-        <i class="fas fa-search"></i>
-        <input type="text" placeholder="Search for city..." id="cityInput" />
-       <button type="submit" id="submitCity">Search</button>
-      </form>
-    </div>
-   
-  <h1 class="city" id="cityName">Denver, USA</h1>
-   <ul id="description">
-    <li id="date">Fri 06:00</li>
-    <li>Cloudy</li>
-</ul>
-
-
-    <div class="row">
-      <div class="col-6">
-        <i
-          id="icon"
-          class="fa-solid fa-cloud fa-beat float-left"
-          style="color: white;"
-        ></i>
-       <div class="temp" id="temperature">21°C | 70°F</div>
-      </div>
-      <div class="col-6">
+       <h1 class="city" id="cityName">Denver, <span id="country">USA</span></h1>
         <ul>
-          <li>Precipitation: 0%</li>
-        <li id="humidity">Humidity: 60%</li>
-          <li id="wind">Wind: 2km/h</li>
+            <li id="date">Fri 06:00</li>
+           <li id="weatherDescription">Cloudy</li>
         </ul>
-      </div>
-    </div>
-  </div>
+
+        <div class="row">
+            <div class="col-6">
+                <i id="icon" class="fa-solid fa-cloud fa-beat float-left" style="color: white;"></i>
+          <div class="temp">
+    <span id="celsiusTemperature">21°C</span> | <span id="fahrenheitTemperature">70°F</span>
 </div>
-<button id="share-button">
-    <i class="fas fa-share"></i> Share
-</button>
-<footer class="footer">
-    <p>Coded by Natalia P</p>
-</footer>
+            </div>
+            <div class="col-6">
+                <ul>
+                    <li id="precipitation">Precipitation: 0%</li>
+                    <li id="humidity">Humidity: 60%</li>
+                    <li id="wind">Wind: 2km/h</li>
+                </ul>
+            </div>
+        </div>
+        <div class="weather-forecast" id="forecast"></div>
+    </div>
+
+    <button id="share-button">
+        <i class="fas fa-share"></i> Share
+    </button>
+
+    <footer class="footer">
+        <p>Coded by Natalia P</p>
+    </footer>
+
+    <script src="src/app.js"></script>
 </body>
 </html>

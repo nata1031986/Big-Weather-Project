@@ -5,6 +5,8 @@ body {
     height: 100vh; 
     align-items: center;
     margin:0;
+   
+
 }
 
 
@@ -15,22 +17,13 @@ body {
     max-width:700px;
     margin:1em;
      height:500px;
-    
+    background-repeat: no-repeat;
+    background-size: cover;
     
     
     border-radius: 15px;
-
-
-
-
-
-
-
-
-
-
-    
 }
+
 form {
     background: #f0f0f0;
     width: 500px;
@@ -103,8 +96,8 @@ li{
     margin:0;
     padding:none;
     color:white;
-    font-size: 16px;
-    font-weight: 100;
+    font-size: 18px;
+    font-weight: bold;
     line-height: 19px;
     text-transform: capitalize;
 
